@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 from app import collect_data
 
-# sg.theme_previewer()
 
 sg.ChangeLookAndFeel("SystemDefault")
 
@@ -31,7 +30,7 @@ layout = [
             font=("Bahnschrift Light", 12),
         )
     ],
-    [sg.Output(size=(130, 25), font=("Bahnschrift Light", 12))],
+    [sg.Output(size=(140, 25), font=("Bahnschrift Light", 12))],
     [
         sg.Button("Поиск", size=(10, 1), font=("Bahnschrift Light", 12)),
         sg.Exit("Выход", size=(10, 1), font=("Bahnschrift Light", 12)),
