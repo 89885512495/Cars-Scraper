@@ -11,7 +11,8 @@ Its finds cars offers from all Russia, sorts from lowest to highest price and pu
 •	Sort by price
 
 # How To Use Scraper
-Just run **gui.py**.
+run: pip install -r requirements.txt in your shell
+run: gui.py.
 
 Or you can do it manually and use classes, results will be print in terminal.
 
