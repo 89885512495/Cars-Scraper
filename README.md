@@ -4,14 +4,17 @@ Cars Scraper will collect data from Avito and Drom web-sources.
 Its finds cars offers from all Russia, sorts from lowest to highest price and puts it in GUI or in terminal.
 
 # Features Overview
-•	Avito Cars Parser
+•	Avito Cars scraper
 
-•	Drom Parser
+•	Drom scraper
 
 •	Sort by price
 
 # How To Use Scraper
-You can extract data from web-sources at once or you can do it for each resource separately.
+Just run **gui.py and use GUI**.
+
+Or you can do it manually and use classes, results will be print in terminal.
+
 
 ## Collect data from Avito & Drom
 ``` python
