@@ -1,8 +1,3 @@
-# TODO: выложить на git
-# TODO: добавить README
-# TODO: добавить concurrent.futures
-# TODO: искать по городам по ссылке?
-
 from avito import Avito
 from drom import Drom
 
