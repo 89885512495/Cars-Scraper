@@ -81,6 +81,8 @@ def collect_data(model: str, pages: int):
 # Future opportunities
 •	Sort by city
 
+•	Proxy
+
 •	Save results in excel, csv file
 
 # Author
