@@ -23,9 +23,12 @@ def collect_data(model: str, pages: int):
     """Get list of cars from sources"""
     collected_data = []
     for page in range(1, pages):
+        # collecting always starts from 1-t page
         print(f"Собираю информацию со страницы - {page}")
         avito_cars = Avito(model, page)
         drom_cars = Drom(model, page)
+        # if source havn`t got data on one of the page, it will be empty [] list
+        # so we dont need it
         data_from_avito = list(avito_cars.get_content())
         if data_from_avito:
             collected_data += data_from_avito
@@ -41,6 +44,35 @@ def collect_data(model: str, pages: int):
             ", Источник: ", collected_data[i][2],
         )
 ```
+
+## Collect data from Avito
+``` python
+from avito import Avito
+
+
+def collect_data(model: str, pages: int):
+    """Get list of cars from sources"""
+    collected_data = []
+    for page in range(1, pages):
+        # collecting always starts from 1-t page
+        print(f"Собираю информацию со страницы - {page}")
+        avito_cars = Avito(model, page)
+        data_from_avito = list(avito_cars.get_content())
+        # if source havn`t got data on one of the page, it will be empty [] list
+        # so we dont need it
+        if data_from_avito:
+            collected_data += data_from_avito
+    # sort from lowest to highest price
+    collected_data.sort(key=lambda i: i[1])
+    print("\nВот, что я нашел:")
+    for i in range(len(collected_data)):
+        print(
+            collected_data[i][0] + "г., ",
+            "Цена - ", collected_data[i][1], "₽",
+            ", Источник: ", collected_data[i][2],
+        )
+```
+
 
 # Author
 •	Vlad Dunaev
