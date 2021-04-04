@@ -31,9 +31,5 @@ def collect_data(model: str, pages: int):
         )
 
 
-def write_exception():
-    pass
-
-
 if __name__ == "__main__":
     collect_data("toyota", pages=2)
