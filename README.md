@@ -1,7 +1,7 @@
 # Cars Scraper
-Cars Scraper will collect data from Avito and Drom web-sources. 
+Cars Scraper will collect data from Avito and Drom web sources.
 
-Its finds cars offers from all Russia, sorts from lowest to highest price and puts it in GUI or in terminal.
+It finds car offers from all Russia, sorts from lowest to the highest price, and puts it in GUI or terminal.
 
 # Features Overview
 •	Avito Cars scraper
